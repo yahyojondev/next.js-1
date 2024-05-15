@@ -1,0 +1,83 @@
+.shop {
+  padding: 80px 0px;
+  &__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    .shop__wrapper__left {
+      position: absolute;
+      left: 0;
+      padding: 22px 59px 30px 33px;
+      display: flex;
+      border-radius: 20px;
+      width: 100%;
+      max-width: 1135px;
+      height: 452px;
+      background: rgb(237, 242, 244);
+      &__text {
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        h2 {
+          width: 100%;
+          background-color: transparent;
+          max-width: 633px;
+          color: rgb(255, 0, 0);
+          font-family: Lalezar;
+          font-size: 48px;
+          font-weight: 400;
+          line-height: 60px;
+          letter-spacing: 0%;
+        }
+        p {
+          background-color: transparent;
+          width: 100%;
+          max-width: 648px;
+          color: rgb(0, 0, 0);
+          font-family: Poppins;
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 19px;
+          letter-spacing: 0%;
+        }
+        button {
+          width: 100%;
+          max-width: 251px;
+          border-radius: 20px;
+          height: 60px;
+          border: none;
+          outline: none;
+          color: rgb(255, 255, 255);
+          font-family: Lalezar;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 31px;
+          letter-spacing: 0%;
+          text-align: center;
+
+          background: rgb(255, 0, 0);
+        }
+      }
+      .shop__wrapper__left__img {
+        background-color: transparent;
+        width: 100%;
+        max-width: 320px;
+        height: 320px;
+      }
+    }
+    .shop__wrapper__right {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      text-align: end;
+      background: rgb(0, 48, 73);
+      width: 100%;
+      border-radius: 10px;
+      max-width: 532px;
+      height: 532px;
+    }
+  }
+}

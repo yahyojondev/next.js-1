@@ -1,0 +1,109 @@
+.navbar {
+  width: 100%;
+  z-index: 9999;
+  position: fixed;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 0px 2px 2px gray;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__left {
+      display: flex;
+      align-items: center;
+      gap: 48px;
+    }
+    &__center {
+      img {
+        width: 100%;
+        max-width: 200px;
+        height: 64px;
+        background-color: transparent;
+      }
+    }
+    &__right {
+      display: flex;
+      align-items: center;
+      gap: 23px;
+      .searching__wrapper {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 205px;
+        height: 32px;
+        border-radius: 10px;
+        background: rgb(237, 242, 244);
+        justify-content: space-between;
+        padding: 0px 10px;
+        svg {
+          font-size: 16px;
+        }
+        input {
+          border: none;
+          outline: none;
+          color: rgba(0, 0, 0, 0.5);
+          font-family: Poppins;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 17px;
+          letter-spacing: 0%;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}
+.navbar__wrapper__left {
+  position: relative;
+}
+.animation {
+  position: absolute;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -5px;
+  left: -20px;
+  z-index: 0;
+  background-color: #1976d2;
+  border-radius: 3px;
+  width: 100px;
+}
+.navbar__link {
+  color: rgb(0, 0, 0);
+  font-family: Poppins;
+  font-size: 18px;
+  z-index: 1;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0%;
+}
+.navbar__link:active {
+  color: red;
+}
+.navbar__wrapper__left .start-home,
+.navbar__link:nth-child(1) {
+  width: 100px;
+}
+.navbar__link:nth-child(2):active ~ .animation {
+  width: 110px;
+  left: 130px;
+}
+.navbar__link:nth-child(2) {
+  width: 100px;
+}
+.navbar__link:nth-child(3):active ~ .animation {
+  width: 110px;
+  left: 260px;
+}
+.navbar__link:nth-child(3) {
+  width: 100px;
+}
+.navbar__link:nth-child(4):active ~ .animation {
+  width: 110px;
+  left: 260px;
+}
